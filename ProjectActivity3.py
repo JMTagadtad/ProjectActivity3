@@ -18,10 +18,10 @@ print ("IP ADDRESS GEOLOCATION INFO:")
 print ("===================================")
 
 # Title for each category (Added category: Postal Code, Time Zone, Languages)
-category = ["IP Address", "Version", "City", "Region", "Country", "Postal Code", "Time Zone", "Continent Code", "Currency", "Languages","Autonomous System Number", "ISP"]
+category = ["IP Address", "Version", "City", "Postal Code", "Region", "Country", "Time Zone", "Continent Code", "Currency", "Languages","Autonomous System Number", "ISP"]
 
 # fetch json data from the api
-json_categories = ["ip", "version", "city", "region", "country_name", "postal", "timezone", "continent_code", "currency", "languages", "asn", "org"]
+json_categories = ["ip", "version", "city", "postal", "region", "country_name",  "timezone", "continent_code", "currency", "languages", "asn", "org"]
 
 #display output
 for i in range(len(category)):

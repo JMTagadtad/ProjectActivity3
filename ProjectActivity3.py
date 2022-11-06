@@ -13,13 +13,15 @@ url = api + ext_ip + "/json"
 # fetch json data from api and external ip
 json_data = requests.get(url).json()
 
-print ("GROUP 7 - PROJECT # 3\n")
+print ("GROUP 7 - PROJECT # 4\n")
+print ("IP ADDRESS GEOLOCATION INFO:")
+print ("===================================")
 
-# Title for each category
-category = ["IP Address", "Version", "City", "Region", "Country", "Continent Code", "Currency", "Autonomous System Number", "ISP"]
+# Title for each category (Added category: Postal Code, Time Zone, Languages)
+category = ["IP Address", "Version", "City", "Region", "Country", "Postal Code", "Time Zone", "Continent Code", "Currency", "Languages","Autonomous System Number", "ISP"]
 
 # fetch json data from the api
-json_categories = ["ip", "version", "city", "region", "country_name", "continent_code", "currency", "asn", "org"]
+json_categories = ["ip", "version", "city", "region", "country_name", "postal", "timezone", "continent_code", "currency", "languages", "asn", "org"]
 
 #display output
 for i in range(len(category)):
